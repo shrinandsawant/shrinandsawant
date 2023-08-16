@@ -1,0 +1,191 @@
+/* App.css (CSS styles) */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color:white;
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-header {
+  color: #333;
+}
+.dark {
+  background-color: black;
+  color: gray;
+}
+
+.dark-mode-button {
+  background-color: lightgreen;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: black;
+}
+
+
+/*.todo-container {
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+*/
+
+.search-bar {
+  width: 72%;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add{
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 8%;
+  height: 40px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 20px;
+  background-color: white;
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.tabs button.active {
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 100;
+}
+
+
+
+
+.todo-list li {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+   margin: 0 auto;*/
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 73.5%;
+  height: 20px;
+  margin-left: 50px;
+}
+
+.todo-list li label {
+  margin-left: 8px;
+}
+
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 70%;
+  height: 20px;
+  margin: 0 auto;
+  margin-left: 90px;
+}
+
+.total-tasks {
+  color: lightgreen;
+  margin: 0;
+}
+
+
+.clear-completed {
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-completed:hover {
+  background-color: black;
+}
+
+
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 500px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo-list li {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .task-info {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+
+
+
+
+
